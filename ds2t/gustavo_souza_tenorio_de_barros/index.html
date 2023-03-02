@@ -5,39 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="./img/1384178.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="./index.js" defer type="module"></script>
-    <link rel="shortcut icon" href="./img/1384178.png" type="image/x-icon">
     <title>WhatsApp GG</title>
 </head>
 
 <body>
-    <header>
-        <img src="./img/whatsapp.png" alt="logo" class="whats">
-    </header>
-    <main>
-        <div class="container" id="cantainer">
-            <div class="icons">
-                <div class="icon_perfil">
-                    <img src="./img/usuario-de-perfil.png" alt="icon_Perfil" class="icon">
+    <div class="container">
+        <div class="lado_esquerdo">
+            <div class="header">
+                <div class="perfil_usuario">
+                    <img src="./img/usuario-de-perfil.png" alt="" class="user">
                 </div>
-                <div class="icon">
-                    <img src="./img/grupo-de-usuarios.png" alt="icon_de_cominidade" class="icon">
-                    <img src="./img/status.png" alt="icon_de_status" class="icon">
-                    <img src="./img/bate-papo.png" alt="icon_bate_papo" class="icon">
-                    <img src="./img/tres-pontos.png" alt="icon_tres_pontos" class="icon">
+                <ul class="nav_icons">
+                    <li>
+                        <ion-icon name="people"></ion-icon>
+                    </li>
+                    <li>
+                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                    </li>
+                    <li>
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </li>
+                    <li>
+                        <ion-icon name = " "></ion-icon>
+                    </li>
+                </ul>
+            </div>
+            <div class="busca">
+                <div>
+                    <input type="text" placeholder="Busca">
+                    <ion-icon name="search-outline"></ion-icon>
                 </div>
             </div>
-            <img src="./img/Line 2.png" alt="linha_Divisória" class="line">
-            <div class="busca">
-                <input type="text">
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="chat">
+                <div class="bloqueado">
+                </div>       
             </div>
         </div>
-    </main>
-    <footer>
-        <p class="footer_text">Gustavo</p>
-    </footer>
+        <div class="lado_direito"></div>
+    </div>
+
 </body>
 
 </html>
