@@ -143,35 +143,40 @@ body{
     color: #00C6CE;
 }
 .card{
+    position: relative;
+    height: calc(100%-110px);
+    overflow: auto;
+    background-color: #565656;
     display: flex;
-    flex-direction: column;
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    padding: 1%;
-    margin: 1%; 
-   
-}
-.card:hover{
-    box-shadow: 0px 0px 20px red;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 10px;
+    border:0.1vw solid #000000;
+
 }
 
-.card__image{
+.card_img{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
     
-   
-   
-
     
 }
 
-.card__title{
-    font-size: 1.5rem;
+.card_nome{
+   font-size: 1.1em;
+   font-weight: 600;
+   color: #000;
+
 }
-.card__description{
-    font-size: 1rem;
+.card_description{
+    
+  
+ 
 }
-.card__price{
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: 900;
+a{
+    display: flex;
+  align-items: center;
 }

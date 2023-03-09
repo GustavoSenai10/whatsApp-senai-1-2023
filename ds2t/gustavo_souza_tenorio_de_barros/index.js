@@ -3,22 +3,28 @@
 import{contatos} from "./contatos.js"
 
 
-const criaCard = (contatos) =>{
+const criaCard = (contatos,indice) =>{
     const card = document.createElement("div")
     card.classList.add ('card')
+    card.setAttribute('id','id-' + indice)
+
+    card.addEventListener('click',(event)=>{
+        carregarContatos(indice)
+    })
 
     const foto = document.createElement('img')
-    foto.classList.add('card_image')
+    foto.classList.add('card_img')
     foto.src = contatos.image
 
-    const nome = document.createElement('h5')
+    const nome = document.createElement('p')
     nome.classList.add('card_nome')
-    nome.textContent = contatos.nome
+    nome.textContent = contatos.name
 
     const descricao = document.createElement('a')
     descricao.classList.add('card_description')
-    descricao.textContent = contatos.descricao
+    descricao.textContent = contatos.description
 
+    
     card.append(foto, nome , descricao)
     return card
 }
@@ -28,4 +34,5 @@ const carregarContatos = ()=> {
 
     container.replaceChildren(...cards)
 }
+
 carregarContatos()
