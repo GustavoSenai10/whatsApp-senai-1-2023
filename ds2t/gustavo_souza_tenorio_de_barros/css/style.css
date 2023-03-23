@@ -1,0 +1,137 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#00FDEE 0%,  #00c2fd 130px, #d9dbd5 130px, #d9dbd5 100%);
+}
+.container{
+    position: relative;
+    width: 1396px;
+    max-width: 100%;
+    height: calc(100vh - 40px);
+    background: #565656;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06),0 0 2px 5px 0 rgba(0,0,0,0.06);
+    display: flex;
+}
+.container .leftSide{
+    position: relative;
+    flex: 30%;
+    background: #ffff;
+    border-right:1px solid #00C2FF;
+}
+
+.container .rightSide{
+    position: relative;
+    flex: 70%;
+    background: #565656;
+    
+}
+.container .rightSide::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/pattern.png);
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background:#565656 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+.foto_de_perfil{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.perfil{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nav_icons {
+    display: flex;
+   
+}
+.nav_icons li{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    color: black;
+    font-size: 1.5em;
+    margin-left: 22px;
+}
+.busca_chat{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+.busca_chat div{
+    width: 100%;
+}
+.busca_chat div input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #018ef3;
+    padding: 6px;
+    height: 38px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 40px;
+}
+.busca_chat div input::placeholder{
+    color: #000;
+}
+.busca_chat div ion-icon{
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    font-size: 1.2em;
+}
+.Arquivados{
+    display: flex;
+    justify-content: center;
+    border-bottom:0.1vw solid #00C2FF;
+    padding: 3%;
+    border-top: 1px solid #00c2fd;
+}
+.Arquivado{
+    font-size: 1.5em;
+    font-family:'Ubuntu', sans-serif; 
+    border: none;
+    
+    
+}
+.icon_arqui{
+    width: 6vw;
+    height: 4vh;
+    color: #00C6CE;
+}

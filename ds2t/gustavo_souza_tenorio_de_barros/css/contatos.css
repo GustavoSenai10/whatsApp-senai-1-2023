@@ -1,0 +1,41 @@
+.cantact-card__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 9vh;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid #00c2fd;
+    border-top: 1px solid #00c2fd;
+}
+
+.cantact-card__image{
+    height: 6vh;
+    width: auto;
+    border-radius: 50%;
+    place-self: left;
+}
+.contact-card__name-description{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sono', sans-serif;
+    font-weight: bolder;
+}
+.cantact-card__name{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.contact-card__description{
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+.cantact-card__container:hover{
+    background-color: #626262;
+   
+    transition: 2s;
+    color: #fff;
+}

@@ -7,69 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/1384178.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="./index.js" defer type="module"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contatos.css">
+    <link rel="stylesheet" href="./css/menssagem.css">
+    <script src="./js/index.js" defer type="module"></script>
     <title>WhatsApp GG</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="lado_esquerdo">
+        <div class="leftSide">
             <div class="header">
-                <div class="perfil_usuario">
-                    <img src="./img/usuario-de-perfil.png" alt="" class="user">
+                <div class="foto_de_perfil">
+                    <img src="./img/foto.jpg" class="perfil"  alt="foto_de_perfil">
                 </div>
                 <ul class="nav_icons">
                     <li>
                         <ion-icon name="people"></ion-icon>
                     </li>
                     <li>
-                        <ion-icon name="sync-circle"></ion-icon>
+                        <ion-icon name="sync"></ion-icon>
                     </li>
                     <li>
-                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                        <ion-icon name="chatbox-ellipses"></ion-icon>
                     </li>
                     <li>
-                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                        <ion-icon name="ellipsis-vertical"></ion-icon>
                     </li>
                 </ul>
             </div>
-            <div class="busca">
+            <div class="busca_chat">
                 <div>
-                    <input type="text" placeholder="Busca">
-                    <ion-icon name="search-outline"></ion-icon>
+                    <input type="text" placeholder="Pesquisar">
+                    <ion-icon name="search-sharp"></ion-icon>
                 </div>
             </div>
-            <div class="chat">
-                <div class="bloqueado">
-                    <ion-icon name="archive" class="icon_arqui"></ion-icon>
-                    <button class="Arquivados">Arquivados</button>
-                </div>
-                <div>
-                    <nav class="container_contatos" id="container_contatos"></nav>
-                </div>       
+            <div class="Arquivados">
+                <ion-icon  class="icon_arqui" name="file-tray-full"></ion-icon>
+                <button class="Arquivado">Arquivados</button>
+            </div>
+            <div class="contacts_container" id="contacts-container">
+
             </div>
         </div>
-        <div class="lado_direito">
-            <ul class="nav_icons">
-                <li>
-                    <ion-icon name="people"></ion-icon>
-                </li>
-                <li>
-                    <ion-icon name="sync-circle"></ion-icon>
-                </li>
-                <li>
-                    <ion-icon name="chatbubble-ellipses"></ion-icon>
-                </li>
-                <li>
-                    <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-                </li>
-            </ul>
-            
+        <div class="rightSide">
+            <div class="menssage_container" id="menssage-container"></div>
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>
